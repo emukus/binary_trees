@@ -22,5 +22,5 @@ bst_t *bst_search(const bst_t *tree, int value)
 		else
 			temp = temp->left;
 	}
-	return (NULL)
+	return (NULL);
 }
