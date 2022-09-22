@@ -16,7 +16,7 @@ int is_bst_helper(const binary_tree_t *tree, int min_v, int max_v)
 	{
 		if (tree->n < min_v || tree->n > max_v)
 			return (0);
-		eturn (is_bst_helper(tree->left, min_v, tree->n - 1) &&
+		return (is_bst_helper(tree->left, min_v, tree->n - 1) &&
 			is_bst_helper(tree->right, tree->n + 1, max_v));
 	}
 	return (1);
